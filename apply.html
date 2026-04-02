@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang  = "en">
+
+    <head>
+
+        <title>Apply Form Page</title>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "Apply form page for applied web project part 1">
+        <meta name = "keywords" content = "&lt;form&gt;-related elements">
+        <meta name = "author" content = "Joshua Boukouvalas (for this page)">
+
+    </head>
+
+    <body>
+
+
+        <header>
+            <!-- Common navigation menu will go here when it is created -->
+        </header>
+
+        <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+            
+            <fieldset>
+                <p><label for = reference_number>Job reference number: *</label>
+                    <br>
+                    <input type = "text" name = "reference_number" id = "reference_number" pattern = "^[A-Za-z0-9]*$" minlength="5" maxlength="5" required = "required">
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Personal information</legend>
+                <br>
+                <fieldset>
+                    <legend>Name</legend>
+                    <p><label for = "first_name">First name: *</label>
+                        <br>
+                        <input type = "text" name = "first_name" id = "first_name" pattern = "^[a-zA-Z][\sa-zA-Z]*$" maxlength = "20" required = "required">
+                    </p>
+
+                    <p><label for = "last_name">Last name: *</label>
+                        <br>
+                        <input type = "text" name = "last_name" id = "last_name" pattern = "^[a-zA-Z][\sa-zA-Z]*$" maxlength = "20" required = "required">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                <p><label for = "date_of_birth">Date of birth: *</label>
+                    <br>
+                    <input type = "date" name = "date_of_birth" id = "date_of_birth" required = "required">
+                </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Gender</legend>
+                    <p>
+                        <input type = "radio" name = "gender" id = "male" value = "male" required = "required">           
+                        <label for = "cos10011">Male</label> 
+
+                        <input type = "radio" name = "gender" id = "female" value = "female">
+                        <label for = "cos60004">Female</label>
+
+                        <input type = "radio" name = "gender" id = "non_binary" value = "non_binary">
+                        <label for = "cos60007">Non-binary</label>
+
+                        <input type = "radio" name = "gender" id = "Prefer_not_to_say" value = "Prefer_not_to_say">
+                        <label for = "cos60007">Prefer not to say</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Address</legend>
+                    <p><label for = "street_address">Street address: *</label>
+                        <br>
+                        <input type = "text" name = "" id = "street_address" maxlength = "40" required = "required">
+                    </p>
+                    
+                    <p><label for = "suburb">Suburb/town: *</label>
+                        <br>
+                        <input type = "text" name = "" id = "suburb" maxlength = "40" required = "required">
+                    </p>
+
+                    <p><label for = "state">State: *</label>
+                        <br>
+                        <select name = "state" id = "state" required  = "required">
+                            <option value = "">Please select</option>	
+                            <option value = "vic">VIC</option>			
+                            <option value = "nsw">NSW</option>
+                            <option value = "qld">QLD</option>
+                            <option value = "nt">NT</option>
+                            <option value = "wa">WA</option>
+                            <option value = "sa">SA</option>
+                            <option value = "tas">TAS</option>
+                            <option value = "act">ACT</option>
+                        </select>
+                    </p>
+
+                    <p><label for = "postcode">Postcode: *</label>
+                        <br>
+                        <input type = "text" name = "" id = "postcode" pattern = "^[0-9]*$" minlength="4" maxlength = "4" required = "required">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Email and phone number</legend>
+                    <p><label for = "email">Email address: *</label>
+                        <br>
+                        <input type = "email" name = "email" id = "email" required = "required">
+                    </p>
+
+                    <p><label for = "phone_number">Phone number: *</label>
+                        <br>
+                        <input type = "text" name = "phone_number" id = "phone_number" pattern = "^[0-9]*$" minlength="8" maxlength = "12" required = "required">
+                    </p>
+
+                </fieldset>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Job information</legend>
+                <p>
+                    <label>Skill list: *</label>
+                    <br>
+                    <input type = "checkbox" name = "skill" id = "skill1" value = "skill1" checked="checked">
+                    <label for = "skill1">Skill 1</label>
+                    <br>
+
+                    <input type = "checkbox" name = "skill" id = "Skill2" value = "Skill2">
+                    <label for = "skill2">Skill 2</label>
+                    <Br>
+
+                    <input type = "checkbox" name = "skill" id = "Skill3" value = "Skill3">
+                    <label for = "Skill3">Skill 3</label>
+                    <br>
+
+                    <input type = "checkbox" name = "skill" id = "Skill4" value = "Skill4">
+                    <label for = "Skill4">Skill 4</label>
+                    <br>
+
+                    <input type = "checkbox" name = "skill" id = "Skill5" value = "Skill5">
+                    <label for = "Skill5">Skill 5</label>
+                </p>
+
+                <br>
+                
+                <p><label>Other skills:</label></p>
+                <p><textarea id="other_skills" name="other_skills" rows="6" cols="30" placeholder="Write other skills here..."></textarea>
+                </p>
+            </fieldset>
+
+            <input type= "submit" value="submit">
+            <input type= "reset" value="Reset form">
+
+        </form>
+
+
+
+
+
+
+
+    </body>
+
+
+
+</html>
