@@ -1,0 +1,49 @@
+/*
+
+filename: [styles.css]
+
+author: [All members]
+
+created: [13/04/2026]
+
+last modified: [14/04/2026]
+
+description: [links to all html files in the project]
+
+*/
+
+
+html {font-family: Arial, Helvetica, sans-serif;}
+
+header {
+    border: 5px solid black;
+    border-radius: 40px;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: #3769ff;
+    text-align: center;
+    text-decoration-color: white;
+}
+
+
+
+/* Apply page specific styling */
+
+form {
+    width: 50%;
+}
+
+fieldset {
+    border: 5px solid black;
+    border-radius: 15px;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: white;
+    text-align: left;
+}
+
+legend {font-weight: bold;}
+
+label {
+    margin-bottom: 50px;
+}
