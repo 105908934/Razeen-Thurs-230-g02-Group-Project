@@ -1,0 +1,8 @@
+header {
+    border: 2px solid black;
+    border-radius: 50px;
+    margin: 0.5m;
+    padding: 0.5em;
+    background-color: #334BFF;
+    text-align: center;
+}
