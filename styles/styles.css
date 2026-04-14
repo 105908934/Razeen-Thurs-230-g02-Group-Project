@@ -16,34 +16,65 @@ description: [links to all html files in the project]
 html {font-family: Arial, Helvetica, sans-serif;}
 
 header {
-    border: 5px solid black;
+    border: 0.3em solid black;
     border-radius: 40px;
     margin: 0.5em;
     padding: 0.5em;
-    background-color: #3769ff;
+    background-color: #00AFFF;
     text-align: center;
     text-decoration-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+nav {
+    display: flex;
+}
 
+nav a {
+    text-decoration: none;
+    padding: 4.5px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    border: 5px solid black;
+}
 
-/* Apply page specific styling */
+nav a:hover {
+    background-color: #3180e7;
+}
+
+/* apply.html page specific styling */
+
+#apply_page {
+    align-items: center;
+}
 
 form {
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid black;
+    border-radius: 15px;
+    width: 80%;
 }
 
 fieldset {
     border: 5px solid black;
     border-radius: 15px;
     margin: 0.5em;
-    padding: 0.5em;
     background-color: white;
-    text-align: left;
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 legend {font-weight: bold;}
 
-label {
-    margin-bottom: 50px;
+.form_p_element {
+    padding: 15px;
 }
