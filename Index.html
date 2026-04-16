@@ -6,18 +6,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="Index page, web technology group project">
-        <meta name="keywords" content="HTML, Doctype, Head, Body, Meta, Paragraph, Headings, Strong, Emphasis">
+        <meta name="keywords" content="HTML, Doctype, Head, Body, Meta, Paragraph, Headings">
         <meta name="author" content="Lachlan Foster">
-        <title>CWA Help Desk Appointment</title>
+        <title>Index</title>
         <link href="styles/styles.css" rel="stylesheet">
-
+        <link href="styles/Index.css" rel="stylesheet">
+        
     </head>
 
     <header>
+        <h1>Home</h1>
         <nav>
             <a href="Index.html">Home</a>
-            <a href="about.html">About US</a>
+            <a href="about.html">About Us</a>
             <a href="jobs.html">Jobs</a>
+            <br>
+            <br>
         </nav>
         <label for="searchbar">Search the site:</label>
         <input type="search" id="searchbar" name="search" />
@@ -25,16 +29,19 @@
     </header>
 
     <body>
-        <img src="images/logo.png" 
-        alt="Logo for the business" 
-        title="Company logo"
-        loading="lazy">
-        <h1>Smart City Infrastructure</h1>
-        <p>Expert Conulting</p>
-        <p>Smart City Infrastructure is a Melboure based consuting firm that speialises in urban solution to help businesses manage energy, trasport, and infrustrucure. Our expert engineers, designers and consultants will help your business reach it's full potential with solutions that wil fit your busines's needs no matter the size.</p>
+        <div style="width: 100%; margin:auto;">
+            <img style="width: 20%" src="images/BusinessLogo.png" 
+            alt="Logo for the business" 
+            title="Company logo"
+            loading="lazy">
+        </div>
+        <h2 style="text-align: center;">Smart City Infrastructure</h2>
+        <p style="text-align: center;">Expert Consulting</p>
+        <br>
+        <p>Smart City Infrastructure is a Melbourne-based consulting firm that specialises in urban solutions to help businesses manage energy, transport, and infrastructure. Our expert engineers, designers and consultants will help your business reach it's full potential with solutions that wil fit your business' needs no matter the size.</p>
         <br>
 
-        <h2>Our Expert Services</h2>
+        <h2 style="text-align: center;">Our Expert Services</h2>
         <table>
                 <thead>
                     <tr>
@@ -46,17 +53,17 @@
                  <tbody>
                      <tr>
                         <td>Energy Consulting</td>
-                        <td>Our expert consultants will advice your business on economic and eco-friendly energy options for your business.</td>
+                        <td>Our expert consultants will provide advice on economic and eco-friendly energy options for your business.</td>
                         <td>$200/hr</td>
                     </tr>
                     <tr>
                         <td>Transport Consulting</td>
-                        <td>Our logistics team will develop efficient solutions to your busines's transport needs</td>
+                        <td>Our logistics team will develop efficient solutions to your busines's transport needs.</td>
                         <td rowspan="2">$100/hr</td>
                     </tr>
                     <tr>
                         <td>Infrustructure Consulting</td>
-                        <td>Our engineers can help you with infrustucure design and safety consulting</td>
+                        <td>Our engineers can help you with infrastrucure design and safety consulting.</td>
                     </tr>
                  </tbody>
         </table>

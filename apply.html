@@ -8,7 +8,7 @@
         <meta charset = "UTF-8">
         <meta name = "description" content = "Apply form page for applied web project part 1">
         <meta name = "keywords" content = "&lt;form&gt;-related elements">
-        <meta name = "author" content = "Joshua Boukouvalas (for this page)">
+        <meta name = "author" content = "Joshua Boukouvalas">
         <link href="styles/styles.css" rel="stylesheet">
 
     </head>
@@ -32,10 +32,10 @@
 
         <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
 
-            <br>
+            <legend id = "form_title">Apply form</legend>
 
             <fieldset>
-                <p class = "form_p_element"><label for = reference_number>Job reference number: *</label>
+                <p class = "form_p_element"><label class = "input_title" for = reference_number>Job reference number: *</label>
                     <br>
                     <input type = "text" name = "reference_number" id = "reference_number" pattern = "^[A-Za-z0-9]*$" minlength="5" maxlength="5" required = "required">
                 </p>
@@ -45,22 +45,23 @@
 
             <fieldset>
                 <legend>Personal information</legend>
-                <p class = "form_p_element"><label for = "first_name">First name: *</label>
+                <p class = "form_p_element"><label class = "input_title" for = "first_name">First name: *</label>
                     <br>
                     <input type = "text" name = "first_name" id = "first_name" pattern = "^[a-zA-Z][\sa-zA-Z]*$" maxlength = "20" required = "required">
                 </p>
 
-                <p class = "form_p_element"><label for = "last_name">Last name: *</label>
+                <p class = "form_p_element"><label class = "input_title" for = "last_name">Last name: *</label>
                     <br>
                     <input type = "text" name = "last_name" id = "last_name" pattern = "^[a-zA-Z][\sa-zA-Z]*$" maxlength = "20" required = "required">
                 </p>
 
-            <p class = "form_p_element"><label for = "date_of_birth">Date of birth: *</label>
+            <p class = "form_p_element"><label class = "input_title" for = "date_of_birth">Date of birth: *</label>
                 <br>
                 <input type = "date" name = "date_of_birth" id = "date_of_birth" required = "required">
             </p>
 
-                <p class = "form_p_element">
+                <p class = "form_p_element"><label class = "input_title" for = "gender">Gender: *</label>
+                    <br>
                     <input type = "radio" name = "gender" id = "male" value = "male" required = "required">           
                     <label for = "male">Male</label> 
 
@@ -80,17 +81,17 @@
 
             <fieldset>
                 <legend>Address</legend>
-                <p class = "form_p_element"><label for = "street_address">Street address: *</label>
+                <p class = "form_p_element"><label class = "input_title" for = "street_address">Street address: *</label>
                     <br>
                     <input type = "text" name = "street_address" id = "street_address" maxlength = "40" required = "required">
                 </p>
                 
-                <p class = "form_p_element"><label for = "suburb">Suburb/town: *</label>
+                <p class = "form_p_element"><label class = "input_title" for = "suburb">Suburb/town: *</label>
                     <br>
                     <input type = "text" name = "suburb" id = "suburb" maxlength = "40" required = "required">
                 </p>
 
-                <p class = "form_p_element"><label for = "state">State: *</label>
+                <p class = "form_p_element"><label class = "input_title" for = "state">State: *</label>
                     <br>
                     <select name = "state" id = "state" required  = "required">
                         <option value = "">Please select</option>	
@@ -105,7 +106,7 @@
                     </select>
                 </p>
 
-                <p class = "form_p_element"><label for = "postcode">Postcode: *</label>
+                <p class = "form_p_element"><label class = "input_title" for = "postcode">Postcode: *</label>
                     <br>
                     <input type = "text" name = "postcode" id = "postcode" pattern = "^[0-9]*$" minlength="4" maxlength = "4" required = "required">
                 </p>
@@ -115,12 +116,12 @@
 
             <fieldset>
                 <legend>Email and phone number</legend>
-                <p class = "form_p_element"><label for = "email">Email address: *</label>
+                <p class = "form_p_element"><label class = "input_title" for = "email">Email address: *</label>
                     <br>
                     <input type = "email" name = "email" id = "email" required = "required">
                 </p>
 
-                <p class = "form_p_element"><label for = "phone_number">Phone number: *</label>
+                <p class = "form_p_element"><label class = "input_title" for = "phone_number">Phone number: *</label>
                     <br>
                     <input type = "text" name = "phone_number" id = "phone_number" pattern = "^[0-9]*$" minlength="8" maxlength = "12" required = "required">
                 </p>
@@ -132,34 +133,35 @@
             <fieldset>
                 <legend>Job information</legend>
                 <p class = "form_p_element">
-                    <label>Skill list: *</label>
+                    <label class = "input_title">Skill list: *</label>
                     <br>
-                    <input type = "checkbox" name = "skill" id = "skill1" value = "skill1" checked = "checked">
+                    <input class = "input_element" type = "checkbox" name = "skill" id = "skill1" value = "skill1" checked = "checked">
                     <label for = "skill1">Skill 1</label>
                     <br>
 
-                    <input type = "checkbox" name = "skill" id = "skill2" value = "skill2">
+                    <input class = "input_element" type = "checkbox" name = "skill" id = "skill2" value = "skill2">
                     <label for = "skill2">Skill 2</label>
                     <Br>
 
-                    <input type = "checkbox" name = "skill" id = "skill3" value = "skill3">
+                    <input class = "input_element" type = "checkbox" name = "skill" id = "skill3" value = "skill3">
                     <label for = "skill3">Skill 3</label>
                     <br>
 
-                    <input type = "checkbox" name = "skill" id = "skill4" value = "skill4">
+                    <input class = "input_element" type = "checkbox" name = "skill" id = "skill4" value = "skill4">
                     <label for = "skill4">Skill 4</label>
                     <br>
 
-                    <input type = "checkbox" name = "skill" id = "skill5" value = "skill5">
+                    <input class = "input_element" type = "checkbox" name = "skill" id = "skill5" value = "skill5">
                     <label for = "skill5">Skill 5</label>
                 </p>
                 
                 <p class = "form_p_element"><label>Other skills:</label></p>
-                <p class = "form_p_element"><textarea id="other_skills" name="other_skills" rows="6" cols="30" placeholder="Write other skills here..."></textarea>
+                <p class = "input_element"><textarea id="other_skills" name="other_skills" rows="6" cols="30" placeholder="Write other skills here..."></textarea>
                 </p>
             </fieldset>
 
             <input type= "submit" value="Submit">
+            <br>
             <input type= "reset" value="Reset form">
 
         </form>
