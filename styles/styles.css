@@ -59,7 +59,10 @@ fieldset {
     background-color: #44c4ff;
 }
 
-legend {font-weight: bold;}
+legend {
+    font-weight: bold;
+    font-size: 1.4em;
+}
 
 .form_p_element {
     padding: 15px;
@@ -67,8 +70,17 @@ legend {font-weight: bold;}
 
 input, textarea, select {
     background-color: lightblue;
-    border: 3px solid #0085c2;
-    border-radius: 15px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input:focus, textarea:focus, select:focus {
+    background-color: rgb(138, 197, 216);
+    border: 3px solid black;
+    border-radius: 10px;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -77,4 +89,25 @@ input, textarea, select {
 #form_title {
     padding: 5%;
     font-size: 1.5em;
+}
+
+.input_title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#radio, .checkbox {
+    background-color: lightblue;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+.input_field {
+    margin-top: 10px;
 }
