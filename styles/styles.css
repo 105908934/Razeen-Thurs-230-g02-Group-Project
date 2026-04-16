@@ -29,6 +29,11 @@ body {
   background-color: lightblue;
 }
 
+.logo {
+    width: 10%;
+    height: 10%;
+}
+
 
 
 /* Apply page specific styling */
