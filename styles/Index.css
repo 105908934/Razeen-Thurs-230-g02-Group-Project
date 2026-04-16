@@ -4,3 +4,8 @@ header {text-align: centre;}
 body {
   background-color: lightblue;
 }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
