@@ -25,6 +25,10 @@ header {
     text-decoration-color: white;
 }
 
+body {
+  background-color: lightblue;
+}
+
 
 
 /* Apply page specific styling */
@@ -69,5 +73,3 @@ input, textarea, select {
     padding: 5%;
     font-size: 1.5em;
 }
-
-.input_title
