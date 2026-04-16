@@ -28,15 +28,13 @@ table th {
     padding: 1em;
 }
 
-p {
+
+
+.information {
     border: 2px solid;
     border-radius: 10px;
     width: 25%;
     padding: 1em;
     text-align: center;
     margin-right: auto;
-}
-
-p a {
-        color: #000;
 }
