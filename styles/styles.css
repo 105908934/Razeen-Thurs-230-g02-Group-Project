@@ -25,9 +25,7 @@ header {
     text-decoration-color: white;
 }
 
-body {
-  background-color: lightblue;
-}
+body {background-color: lightblue;}
 
 .logo {
     width: 10%;
@@ -64,9 +62,7 @@ legend {
     font-size: 1.4em;
 }
 
-.form_p_element {
-    padding: 15px;
-}
+.form_p_element {padding: 15px;}
 
 input, textarea, select {
     background-color: lightblue;
@@ -75,6 +71,7 @@ input, textarea, select {
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 20px;
 }
 
 input:focus, textarea:focus, select:focus {
@@ -96,7 +93,7 @@ input:focus, textarea:focus, select:focus {
     font-weight: bold;
 }
 
-#radio, .checkbox {
+.radio, .checkbox {
     background-color: lightblue;
     border: 3px solid black;
     border-radius: 10px;
@@ -106,8 +103,16 @@ input:focus, textarea:focus, select:focus {
     display: block;
     width: 70%;
     margin: auto;
+    text-align: left;
 }
 
-.input_field {
-    margin-top: 10px;
+.radio {width: 150px;}
+
+[type = "radio"] {
+    width: 20px;
+    height: 20px;
 }
+
+.input_field {margin-top: 10px;}
+
+.checkbox {font-size: 20px;}

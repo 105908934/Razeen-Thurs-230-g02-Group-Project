@@ -30,10 +30,12 @@
 
         <br>
 
+        <!-- Apply form elements -->
         <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
 
             <legend id = "form_title">Apply form</legend>
 
+            <!-- Fieldset containing  -->
             <fieldset>
                 <p class = "form_p_element">
                     <label class = "input_title" for = reference_number>Job reference number: *</label>
@@ -68,16 +70,23 @@
                     <label class = "input_title" for = "gender">Gender: *</label>
                     <br>
                     <br>
-                    <span id = "radio">
+                    <span class = "radio">
                         <input type = "radio" name = "gender" id = "male" value = "male" required = "required">           
-                        <label for = "male">Male</label> 
-
+                        <label for = "male">Male</label>
+                    </span>
+                        <br>
+                    <span class = "radio">
                         <input type = "radio" name = "gender" id = "female" value = "female">
                         <label for = "female">Female</label>
-
+                    </span>
+                        <br>
+                    <span class = "radio">
                         <input type = "radio" name = "gender" id = "non_binary" value = "non_binary">
                         <label for = "non_binary">Non-binary</label>
+                    </span>
 
+                        <br>
+                    <span class = "radio">
                         <input type = "radio" name = "gender" id = "Prefer_not_to_say" value = "Prefer_not_to_say">
                         <label for = "Prefer_not_to_say">Prefer not to say</label>
                     </span>
@@ -178,7 +187,7 @@
                 
                 
                 <p class = "form_p_element">
-                    <label>Other skills:</label>
+                    <label class = "input_title">Other skills:</label>
                 </p>
                 <p><textarea id="other_skills" name="other_skills" rows="6" cols="30" placeholder="Write other skills here..."></textarea>
                 </p>
