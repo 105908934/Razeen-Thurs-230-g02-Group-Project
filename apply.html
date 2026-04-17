@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang  = "en" id = "apply_page">
+<html lang  = "en">
 
     <head>
 
@@ -20,10 +20,12 @@
             <!-- Common navigation menu will go here when it is created -->
              <h1>Apply Page</h1>
 
+            <br>
+        
             <nav>
-                <a href="Index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="jobs.html">Jobs</a>
+                <a id = "home" href="Index.html">Home</a>
+                <a id = "about_us" href="about.html">About Us</a>
+                <a id = "jobs" href="jobs.html">Jobs</a>
             </nav>
             
         </header>
@@ -35,14 +37,14 @@
 
             <legend id = "form_title">Apply form</legend>
 
-            <!-- Fieldset containing  -->
-            <fieldset>
-                <p class = "form_p_element">
+
+            <div id = "reference_number_box">
+                <p>
                     <label class = "input_title" for = reference_number>Job reference number: *</label>
                     <br>
                     <input class = "input_field" type = "text" name = "reference_number" id = "reference_number" pattern = "^[A-Za-z0-9]*$" minlength="5" maxlength="5" required = "required">
                 </p>
-            </fieldset>
+            </div>
 
             <br>
 
@@ -65,27 +67,28 @@
                 <br>
                 <input class = "input_field" type = "date" name = "date_of_birth" id = "date_of_birth" required = "required">
             </p>
+            </fieldset>
 
+            <br>
+
+            <fieldset>
+                <legend>Gender</legend>
                 <p class = "form_p_element">
-                    <label class = "input_title" for = "gender">Gender: *</label>
-                    <br>
-                    <br>
                     <span class = "radio">
                         <input type = "radio" name = "gender" id = "male" value = "male" required = "required">           
                         <label for = "male">Male</label>
                     </span>
-                        <br>
+                        
                     <span class = "radio">
                         <input type = "radio" name = "gender" id = "female" value = "female">
                         <label for = "female">Female</label>
                     </span>
-                        <br>
+                        
                     <span class = "radio">
                         <input type = "radio" name = "gender" id = "non_binary" value = "non_binary">
                         <label for = "non_binary">Non-binary</label>
                     </span>
 
-                        <br>
                     <span class = "radio">
                         <input type = "radio" name = "gender" id = "Prefer_not_to_say" value = "Prefer_not_to_say">
                         <label for = "Prefer_not_to_say">Prefer not to say</label>
@@ -113,7 +116,7 @@
                 <p class = "form_p_element">
                     <label class = "input_title" for = "state">State: *</label>
                     <br>
-                    <select name = "state" id = "state" required  = "required">
+                    <select class = "input_field" name = "state" id = "state" required  = "required">
                         <option value = "">Please select</option>	
                         <option value = "vic">VIC</option>			
                         <option value = "nsw">NSW</option>
@@ -156,40 +159,39 @@
             <fieldset>
                 <legend>Job information</legend>
                 <p class = "form_p_element">
-                    <label class = "input_title">Skill list: *</label>
+                    <label class = "input_title" for = "skill">Skill list: *</label>
                     <br>
                     <span class = "checkbox">
                         <input class = "input_element" type = "checkbox" name = "skill" id = "skill1" value = "skill1" checked = "checked">
                         <label for = "skill1">Skill 1</label>
                     </span>
 
-                        <br>
                     <span class = "checkbox">
                         <input class = "input_element" type = "checkbox" name = "skill" id = "skill2" value = "skill2">
                         <label for = "skill2">Skill 2</label>
                     </span>
-                        <br>
+
                     <span class = "checkbox">
                         <input class = "input_element" type = "checkbox" name = "skill" id = "skill3" value = "skill3">
                         <label for = "skill3">Skill 3</label>
                     </span>
-                        <br>
+                        
                     <span class = "checkbox">
-                        <input class = "input_element" type = "checkbox" name = "skill" id = "skill4" value = "skill4">
+                        <input type = "checkbox" name = "skill" id = "skill4" value = "skill4">
                         <label for = "skill4">Skill 4</label>
                     </span>
-                        <br>
+                        
                     <span class = "checkbox">
-                        <input class = "input_element" type = "checkbox" name = "skill" id = "skill5" value = "skill5">
+                        <input type = "checkbox" name = "skill" id = "skill5" value = "skill5">
                         <label for = "skill5">Skill 5</label>
                     </span>
                 </p>
                 
                 
                 <p class = "form_p_element">
-                    <label class = "input_title">Other skills:</label>
-                </p>
-                <p><textarea id="other_skills" name="other_skills" rows="6" cols="30" placeholder="Write other skills here..."></textarea>
+                    <label class = "input_title" for = "other_skills">Other skills:</label>
+                    <br>
+                    <textarea id="other_skills" name="other_skills" rows="6" cols="30" placeholder="Write other skills here..."></textarea>
                 </p>
             </fieldset>
 

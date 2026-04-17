@@ -13,16 +13,23 @@ description: [links to all html files in the project]
 */
 
 
+/* central styling */
+
 html {font-family: Arial, Helvetica, sans-serif;}
 
 header {
     border: 0.3em solid black;
     border-radius: 40px;
     margin: 0.5em;
-    padding: 0.5em;
+    padding: 1em;
     background-color: #44c4ff;
     text-align: center;
     text-decoration-color: white;
+    padding-bottom: 2.5em;
+}
+
+h1 {
+    font-size: 3em;
 }
 
 body {background-color: lightblue;}
@@ -32,9 +39,51 @@ body {background-color: lightblue;}
     height: 10%;
 }
 
+nav a {
+    border: 0.25em transparent;
+    padding: 0.6em;
+    background-color: #44c4ff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+}
+
+nav a#home {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+nav a#about_us {
+    border-right: 0.25em solid black;
+    border-left: 0.25em solid black;
+}
+
+nav a#jobs {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    border: 0.25em solid black;
+    border-radius: 40px;
+    width: 16.39em;
+    margin: auto;
+}
+
+nav a:hover {
+    background-color: #64bcd9;
+    transition: 0.2s;
+}
+
+/* end central styling */
 
 
-/* Apply page specific styling */
+
+/* apply page specific styling */
 
 form {
     display: flex;
@@ -43,11 +92,11 @@ form {
     border: 5px solid black;
     border-radius: 15px;
     width: 60%;
-    margin: 0 auto;
-    background-color: #44c4ff;   
+    margin: auto;
+    background-color: #44c4ff;
 }
 
-fieldset {
+fieldset, #reference_number_box {
     border: 5px solid black;
     border-radius: 15px;
     margin: 0.5em;
@@ -55,11 +104,17 @@ fieldset {
     text-align: center;
     width: 80%;
     background-color: #44c4ff;
+    padding: 0em;
+}
+
+#reference_number_box {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
 legend {
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 .form_p_element {padding: 15px;}
@@ -75,21 +130,17 @@ input, textarea, select {
 }
 
 input:focus, textarea:focus, select:focus {
-    background-color: rgb(138, 197, 216);
-    border: 3px solid black;
-    border-radius: 10px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    background-color: #8ac5d8;
+    transition: 0.15s;
 }
 
 #form_title {
-    padding: 5%;
-    font-size: 1.5em;
+    padding: 3%;
+    font-size: 2em;
 }
 
 .input_title {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
 }
 
@@ -100,19 +151,25 @@ input:focus, textarea:focus, select:focus {
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    display: block;
+    display: inline-block;
     width: 70%;
     margin: auto;
     text-align: left;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.1em;
 }
 
-.radio {width: 150px;}
+.radio {
+    width: 170px;
 
-[type = "radio"] {
+}
+
+[type = "radio"], [type = "checkbox"] {
     width: 20px;
     height: 20px;
 }
 
 .input_field {margin-top: 10px;}
 
-.checkbox {font-size: 20px;}
+/* end apply page specific styling */
