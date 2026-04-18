@@ -285,3 +285,22 @@ input, textarea, select {
 /* end apply page specific styling */
 
 }
+
+/* index page specific syling */
+
+.table {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.MainText{
+    float:right;
+    width: 57%;
+}
+
+.table, aside{
+    margin-left: auto;
+    margin-right: auto;    
+}
+/* end index page specific syling */
