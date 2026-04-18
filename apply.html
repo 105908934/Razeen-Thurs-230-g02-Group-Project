@@ -9,7 +9,16 @@
         <meta name = "description" content = "Apply form page for applied web project part 1">
         <meta name = "keywords" content = "&lt;form&gt;-related elements">
         <meta name = "author" content = "Joshua Boukouvalas">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link href="styles/styles.css" rel="stylesheet">
+
+        <style>
+            .form_p_element {
+                padding: 1em;
+            }
+        </style>
 
     </head>
 
@@ -17,7 +26,7 @@
 
 
         <header>
-            <!-- Common navigation menu will go here when it is created -->
+
              <h1>Apply Page</h1>
 
             <br>
@@ -35,8 +44,7 @@
         <!-- Apply form elements -->
         <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
 
-            <legend id = "form_title">Apply form</legend>
-
+            <h2 id = "form_title">Apply form</h2>
 
             <div id = "reference_number_box">
                 <p>
@@ -67,13 +75,12 @@
                 <br>
                 <input class = "input_field" type = "date" name = "date_of_birth" id = "date_of_birth" required = "required">
             </p>
-            </fieldset>
 
             <br>
 
-            <fieldset>
+            <fieldset id = "gender_sub_fieldset">
                 <legend>Gender</legend>
-                <p class = "form_p_element">
+                <p>
                     <span class = "radio">
                         <input type = "radio" name = "gender" id = "male" value = "male" required = "required">           
                         <label for = "male">Male</label>
@@ -94,6 +101,7 @@
                         <label for = "Prefer_not_to_say">Prefer not to say</label>
                     </span>
                 </p>
+                </fieldset>
 
             </fieldset>
 
@@ -158,34 +166,38 @@
 
             <fieldset>
                 <legend>Job information</legend>
-                <p class = "form_p_element">
-                    <label class = "input_title" for = "skill">Skill list: *</label>
-                    <br>
-                    <span class = "checkbox">
-                        <input class = "input_element" type = "checkbox" name = "skill" id = "skill1" value = "skill1" checked = "checked">
-                        <label for = "skill1">Skill 1</label>
-                    </span>
 
-                    <span class = "checkbox">
-                        <input class = "input_element" type = "checkbox" name = "skill" id = "skill2" value = "skill2">
-                        <label for = "skill2">Skill 2</label>
-                    </span>
+                <fieldset id = "skill_list_sub_fieldset" style = "margin-top: 2.5em;">
+                    <legend>Skill list: *</legend>
+                    <p>
+                        <br>
+                        <span class = "checkbox">
+                            <input class = "input_element" type = "checkbox" name = "skill" id = "skill1" value = "skill1" checked = "checked">
+                            <label for = "skill1">Skill 1</label>
+                        </span>
 
-                    <span class = "checkbox">
-                        <input class = "input_element" type = "checkbox" name = "skill" id = "skill3" value = "skill3">
-                        <label for = "skill3">Skill 3</label>
-                    </span>
-                        
-                    <span class = "checkbox">
-                        <input type = "checkbox" name = "skill" id = "skill4" value = "skill4">
-                        <label for = "skill4">Skill 4</label>
-                    </span>
-                        
-                    <span class = "checkbox">
-                        <input type = "checkbox" name = "skill" id = "skill5" value = "skill5">
-                        <label for = "skill5">Skill 5</label>
-                    </span>
-                </p>
+                        <span class = "checkbox">
+                            <input class = "input_element" type = "checkbox" name = "skill" id = "skill2" value = "skill2">
+                            <label for = "skill2">Skill 2</label>
+                        </span>
+
+                        <span class = "checkbox">
+                            <input class = "input_element" type = "checkbox" name = "skill" id = "skill3" value = "skill3">
+                            <label for = "skill3">Skill 3</label>
+                        </span>
+                            
+                        <span class = "checkbox">
+                            <input type = "checkbox" name = "skill" id = "skill4" value = "skill4">
+                            <label for = "skill4">Skill 4</label>
+                        </span>
+                            
+                        <span class = "checkbox">
+                            <input type = "checkbox" name = "skill" id = "skill5" value = "skill5">
+                            <label for = "skill5">Skill 5</label>
+                        </span>
+                    </p>
+
+                </fieldset>
                 
                 
                 <p class = "form_p_element">
