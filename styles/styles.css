@@ -6,19 +6,22 @@ author: [All members]
 
 created: [13/04/2026]
 
-last modified: [14/04/2026]
+last modified: [17/04/2026]
 
 description: [links to all html files in the project]
 
 */
 
+@media screen and (max-width: 500em) {
 
 /* central styling */
+
+
 
 html {font-family: Arial, Helvetica, sans-serif;}
 
 header {
-    border: 0.3em solid black;
+    border: 5px solid black;
     border-radius: 40px;
     margin: 0.5em;
     padding: 1em;
@@ -40,19 +43,20 @@ body {background-color: lightblue;}
 }
 
 nav a {
-    border: 0.25em transparent;
+    border: 4px transparent;
     padding: 0.6em;
-    background-color: #44c4ff;
+    background-color: lightblue;
     text-align: center;
     text-decoration: none;
     font-size: 1.2em;
     color: black;
     font-weight: bold;
+    width: 10em;
 }
 
 nav a#home {
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 nav a#about_us {
@@ -61,21 +65,21 @@ nav a#about_us {
 }
 
 nav a#jobs {
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    border: 0.25em solid black;
-    border-radius: 40px;
-    width: 16.39em;
+    border: 4px solid black;
+    border-radius: 25px;
+    width: 25em;
     margin: auto;
 }
 
 nav a:hover {
-    background-color: #64bcd9;
+    background-color: #8ac5d8;
     transition: 0.2s;
 }
 
@@ -90,17 +94,27 @@ form {
     align-items: center;
     flex-direction: column;
     border: 5px solid black;
-    border-radius: 15px;
-    width: 60%;
+    border-radius: 24px;
+    width: 70%;
     margin: auto;
     background-color: #44c4ff;
 }
 
+#form_title {
+    padding: 0.2em;
+    font-size: 2.75em;
+    font-weight: bold;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
 fieldset, #reference_number_box {
     border: 5px solid black;
-    border-radius: 15px;
+    border-radius: 24px;
     margin: 0.5em;
-    background-color: white;
     text-align: center;
     width: 80%;
     background-color: #44c4ff;
@@ -108,35 +122,36 @@ fieldset, #reference_number_box {
 }
 
 #reference_number_box {
-    padding-top: 1.5em;
+    padding-top: 1.25em;
     padding-bottom: 1.5em;
 }
 
-legend {
-    font-weight: bold;
-    font-size: 1.5em;
+#gender_sub_fieldset, #skill_list_sub_fieldset {
+    margin: auto;
+    padding: 0.9375em;
+    margin-bottom: 3em;
+    width: 80%;
+    padding-bottom: 2.4em;
 }
 
-.form_p_element {padding: 15px;}
+label#gender_sub_fieldset {
+    font-size: 1em;
+}
 
 input, textarea, select {
     background-color: lightblue;
-    border: 3px solid black;
+    border: 4px solid black;
+    padding: 0.3125em;
     border-radius: 10px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 20px;
+    padding: 0.3125;
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+    font-size: 1.3em;
 }
 
 input:focus, textarea:focus, select:focus {
     background-color: #8ac5d8;
     transition: 0.15s;
-}
-
-#form_title {
-    padding: 3%;
-    font-size: 2em;
 }
 
 .input_title {
@@ -146,43 +161,127 @@ input:focus, textarea:focus, select:focus {
 
 .radio, .checkbox {
     background-color: lightblue;
-    border: 3px solid black;
+    border: 4px solid black;
     border-radius: 10px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0.3125em;
+    padding-right: 0.3125em;
     display: inline-block;
     width: 70%;
     margin: auto;
     text-align: left;
-    margin-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 0.625em;
+    padding-bottom: 0.625em;
     font-size: 1.1em;
 }
 
 .radio {
-    width: 170px;
+    width: 10em;
 
 }
 
 [type = "radio"], [type = "checkbox"] {
-    width: 20px;
-    height: 20px;
+    width: 0.9em;
+    height: 0.9em;
 }
 
-.input_field {margin-top: 10px;}
+.input_field, textarea {margin-top: 0.625em;}
 
 /* end apply page specific styling */
 
-/* index page specific styling */
-
-.MainText{
-    text-align: right;
 }
 
-.bordertable {
-  border: 1px solid black;
-  border-collapse: collapse;
+
+
+@media screen and (max-width: 100em) {
+
+/* central styling */
+
+h1 {
+    font-size: 2.6em;
 }
 
-/* end index page specific styling */
+nav a {
+    font-size: 1em;
+}
+
+/* end central styling */
+
+#form_title {
+    font-size: 2.55em;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+label#gender_sub_fieldset {
+    font-size: 0.8em;
+}
+
+input, textarea, select {
+    font-size: 1.1em;
+}
+
+.input_title {
+    font-size: 1.2em;
+}
+
+.radio, .checkbox {
+    font-size: 1.05em;
+}
+
+/* apply page specific styling */
+
+
+
+/* end apply page specific styling */
+
+}
+
+@media screen and (max-width: 50em) {
+
+/* central styling */
+
+h1 {
+    font-size: 2.1em;
+}
+
+nav a{
+    font-size: 0.8em;
+}
+
+/* end central styling */
+
+
+
+/* apply page specific styling */
+
+#form_title {
+    font-size: 2.35em;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+label#gender_sub_fieldset {
+    font-size: 0.6em;
+}
+
+input, textarea, select {
+    font-size: 0.9em;
+}
+
+.input_title {
+    font-size: 1em;
+}
+
+.radio, .checkbox {
+    font-size: 0.9em;
+}
+
+/* end apply page specific styling */
+
+}
