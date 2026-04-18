@@ -173,3 +173,16 @@ input:focus, textarea:focus, select:focus {
 .input_field {margin-top: 10px;}
 
 /* end apply page specific styling */
+
+/* index page specific styling */
+
+.MainText{
+    text-align: right;
+}
+
+.bordertable {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/* end index page specific styling */

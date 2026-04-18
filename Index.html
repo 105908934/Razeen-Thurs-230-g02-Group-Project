@@ -16,6 +16,11 @@
     </head>
 
     <header>
+        <!--The Businesses logo-->
+        <img style="width: 10%;" src="images/BusinessLogo.png" 
+        alt="Logo for the business" 
+        title="Company logo"
+        loading="lazy">
         <h1>Home</h1>
         <!--The Navigation bar containing links to the other pages-->
         <nav>
@@ -23,6 +28,7 @@
                 <a id = "about_us" href="about.html">About Us</a>
                 <a id = "jobs" href="jobs.html">Jobs</a>
         </nav>
+        <br>
         <label for="searchbar">Search the site:</label>
         <input type="search" id="searchbar" name="search">
         <button>Search</button>
@@ -30,45 +36,60 @@
 
     <body>
         <div style="width: 100%; margin:auto;">
-            <!--The Businesses logo-->
-            <img style="width: 20%;" src="images/BusinessLogo.png" 
-            alt="Logo for the business" 
-            title="Company logo"
-            loading="lazy">
+
         </div>
         <h2 style="text-align: center;">Smart City Infrastructure</h2>
         <p style="text-align: center;"> Expert Consulting</p>
         <br>
         <p class="MainText">Smart City Infrastructure is a Melbourne-based consulting firm that specialises in urban solutions to help businesses manage energy, transport, and infrastructure. Our expert engineers, designers and consultants will help your business reach it's full potential with solutions that wil fit your business' needs no matter the size.</p>
-        <br>
 
+        <aside>
+        <img style="width: 20%;" src="images/CityImage.webp" 
+            alt="Logo for the business" 
+            title="Company logo"
+            loading="lazy">
+        </aside>
+        <br>
         <h2 style="text-align: center;">Our Expert Services</h2>
         <!--Table containing the busines's services -->
-        <table>
-                <thead>
+        <table class="bordertable">
+                <thead class="bordertable">
                     <tr>
                         <th>Service</th>
                         <th>Description</th>
                         <th>Cost</th>
                     </tr>
                 </thead> 
-                 <tbody>
+                 <tbody class="bordertable">
                      <tr>
-                        <td>Energy Consulting</td>
-                        <td>Our expert consultants will provide advice on economic and eco-friendly energy options for your business.</td>
-                        <td>$200/hr</td>
+                        <td class="bordertable">Energy Consulting</td>
+                        <td class="bordertable">Our expert consultants will provide advice on economic and eco-friendly energy options for your business.</td>
+                        <td class="bordertable">$200/hr</td>
                     </tr>
                     <tr>
-                        <td>Transport Consulting</td>
-                        <td>Our logistics team will develop efficient solutions to your business' transport needs.</td>
-                        <td rowspan="2">$100/hr</td>
+                        <td class="bordertable">Transport Consulting</td>
+                        <td class="bordertable">Our logistics team will develop efficient solutions to your business' transport needs.</td>
+                        <td rowspan="2"; class="bordertable">$100/hr</td>
                     </tr>
                     <tr>
-                        <td>Infrastructure Consulting</td>
-                        <td>Our engineers can help you with infrastrucure design and safety consulting.</td>
-  </tr>
+                        <td class="bordertable">Infrastructure Consulting</td>
+                        <td class="bordertable">Our engineers can help you with infrastrucure design and safety consulting.</td>
+                    </tr>
                  </tbody>
         </table>
+        <br>
+
+        <table>
+            <tr>
+                <td style="width: 10%;"> <img style="width: 100%;" src="images/Flags.png" 
+                alt="Aboriginal and Ttorres strait islander flags" 
+                title="Flags"
+                loading="lazy"> 
+                </td>
+                <td> We respectfully acknowledge the Wurundjeri people of the Kulin Nation as the traditional owners of the land that Swinburne sits on. We pay our respects to heir elders, past, present, and emerging. </td>
+            </tr>
+        </table>
+
 
         <hr>
         <footer>
