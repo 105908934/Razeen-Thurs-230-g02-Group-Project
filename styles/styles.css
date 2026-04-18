@@ -6,7 +6,7 @@ author: [All members]
 
 created: [13/04/2026]
 
-last modified: [17/04/2026]
+last modified: [18/04/2026]
 
 description: [links to all html files in the project]
 
@@ -16,14 +16,13 @@ description: [links to all html files in the project]
 
 /* central styling */
 
-
-
 html {font-family: Arial, Helvetica, sans-serif;}
 
 header {
     border: 5px solid black;
     border-radius: 40px;
     margin: 0.5em;
+    margin-top: 1em;
     padding: 1em;
     background-color: #44c4ff;
     text-align: center;
@@ -48,10 +47,11 @@ nav a {
     background-color: lightblue;
     text-align: center;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: black;
     font-weight: bold;
     width: 10em;
+    transition: 0.2s;
 }
 
 nav a#home {
@@ -94,10 +94,11 @@ form {
     align-items: center;
     flex-direction: column;
     border: 5px solid black;
-    border-radius: 24px;
+    border-radius: 25px;
     width: 70%;
     margin: auto;
     background-color: #44c4ff;
+    padding-bottom: 1.25em;
 }
 
 #form_title {
@@ -109,11 +110,17 @@ form {
 legend {
     font-weight: bold;
     font-size: 1.6em;
+    border: 0.2em solid black;
+    border-radius: 25px;
+    padding: 0.1em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+
 }
 
 fieldset, #reference_number_box {
     border: 5px solid black;
-    border-radius: 24px;
+    border-radius: 25px;
     margin: 0.5em;
     text-align: center;
     width: 80%;
@@ -129,13 +136,13 @@ fieldset, #reference_number_box {
 #gender_sub_fieldset, #skill_list_sub_fieldset {
     margin: auto;
     padding: 0.9375em;
-    margin-bottom: 3em;
-    width: 80%;
+    margin-bottom: 2.5em;
+    width: 60%;
     padding-bottom: 2.4em;
 }
 
-label#gender_sub_fieldset {
-    font-size: 1em;
+#gender_sub_fieldset {
+    width: 0%;
 }
 
 input, textarea, select {
@@ -147,11 +154,17 @@ input, textarea, select {
     padding-left: 0.625em;
     padding-right: 0.625em;
     font-size: 1.3em;
+    transition: 0.2s;
+}
+
+textarea {
+    width: 25em;
+    height: 10em;
 }
 
 input:focus, textarea:focus, select:focus {
     background-color: #8ac5d8;
-    transition: 0.15s;
+    transition: 0.2s;
 }
 
 .input_title {
@@ -171,17 +184,22 @@ input:focus, textarea:focus, select:focus {
     text-align: left;
     margin-top: 0.625em;
     padding-bottom: 0.625em;
+    padding-top: 0.3125em;
     font-size: 1.1em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.radio {
-    width: 10em;
-
-}
+.radio {width: 10em;}
 
 [type = "radio"], [type = "checkbox"] {
     width: 0.9em;
     height: 0.9em;
+}
+
+[type = "submit"]:hover, [type = "reset"]:hover {
+    background-color: #8ac5d8;
+    transition: 0.2s;
 }
 
 .input_field, textarea {margin-top: 0.625em;}
@@ -196,13 +214,11 @@ input:focus, textarea:focus, select:focus {
 
 /* central styling */
 
-h1 {
-    font-size: 2.6em;
-}
+h1 {font-size: 2.6em;}
 
-nav a {
-    font-size: 1em;
-}
+nav a {font-size: 1.2em;}
+
+nav {width: 23em;}
 
 /* end central styling */
 
@@ -215,8 +231,8 @@ legend {
     font-size: 1.4em;
 }
 
-label#gender_sub_fieldset {
-    font-size: 0.8em;
+#gender_sub_fieldset {
+    font-size: 0.9em;
 }
 
 input, textarea, select {
@@ -229,6 +245,11 @@ input, textarea, select {
 
 .radio, .checkbox {
     font-size: 1.05em;
+}
+
+textarea {
+    width: 23em;
+    height: 8em;
 }
 
 /* apply page specific styling */
@@ -247,8 +268,12 @@ h1 {
     font-size: 2.1em;
 }
 
-nav a{
-    font-size: 0.8em;
+nav a {
+    font-size: 1em;
+}
+
+nav {
+    width: 19em;
 }
 
 /* end central styling */
@@ -266,8 +291,8 @@ legend {
     font-size: 1.2em;
 }
 
-label#gender_sub_fieldset {
-    font-size: 0.6em;
+#gender_sub_fieldset {
+    font-size: 0.9em;
 }
 
 input, textarea, select {
@@ -280,6 +305,11 @@ input, textarea, select {
 
 .radio, .checkbox {
     font-size: 0.9em;
+}
+
+textarea {
+    width: 15em;
+    height: 6em;
 }
 
 /* end apply page specific styling */
