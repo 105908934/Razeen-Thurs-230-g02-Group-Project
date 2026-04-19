@@ -3,17 +3,21 @@
 <html lang  = "en">
 
     <head>
-
+        
+        <!-- HTML title and meta tags -->
         <title>Apply Form Page</title>
         <meta charset = "UTF-8">
         <meta name = "description" content = "Apply form page for applied web project part 1">
         <meta name = "keywords" content = "&lt;form&gt;-related elements">
         <meta name = "author" content = "Joshua Boukouvalas">
 
+        <!-- sets the viewport scale to 1 for responsive styling -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- links to styles.css stylesheet -->
         <link href="styles/styles.css" rel="stylesheet">
 
+        <!-- embedded/internal CSS example for the form_p_element class -->
         <style>
             .form_p_element {
                 padding: 1em;
@@ -22,9 +26,10 @@
 
     </head>
 
+    <!-- body containing all visible content on the HTML page -->
     <body>
 
-
+        <!-- header containing h1 page title, logo and central navigation bar -->
         <header>
 
              <h1>Apply Page</h1>
@@ -44,6 +49,7 @@
         <!-- main form element, includes all form elements as children and links to formtest website  -->
         <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
 
+            <!-- h2 form title -->
             <h2 id = "form_title">Apply form</h2>
 
             <div id = "reference_number_box">
@@ -56,7 +62,9 @@
 
             <br>
 
+            <!-- fieldset for personal information -->
             <fieldset>
+                <!-- fieldset title -->
                 <legend>Personal information</legend>
                 <p class = "form_p_element">
                     <label class = "input_title" for = "first_name">First name: *</label>
@@ -77,37 +85,41 @@
             </p>
 
             <br>
+                
+                <!-- sub-fieldset of personal information for gender -->
+                <fieldset id = "gender_sub_fieldset">
+                    <!-- fieldset title -->
+                    <legend>Gender *</legend>
+                    <p>
+                        <span class = "radio">
+                            <input type = "radio" name = "gender" id = "male" value = "male" required = "required">           
+                            <label for = "male">Male</label>
+                        </span>
+                            
+                        <span class = "radio">
+                            <input type = "radio" name = "gender" id = "female" value = "female">
+                            <label for = "female">Female</label>
+                        </span>
+                            
+                        <span class = "radio">
+                            <input type = "radio" name = "gender" id = "non_binary" value = "non_binary">
+                            <label for = "non_binary">Non-binary</label>
+                        </span>
 
-            <fieldset id = "gender_sub_fieldset">
-                <legend>Gender *</legend>
-                <p>
-                    <span class = "radio">
-                        <input type = "radio" name = "gender" id = "male" value = "male" required = "required">           
-                        <label for = "male">Male</label>
-                    </span>
-                        
-                    <span class = "radio">
-                        <input type = "radio" name = "gender" id = "female" value = "female">
-                        <label for = "female">Female</label>
-                    </span>
-                        
-                    <span class = "radio">
-                        <input type = "radio" name = "gender" id = "non_binary" value = "non_binary">
-                        <label for = "non_binary">Non-binary</label>
-                    </span>
-
-                    <span class = "radio">
-                        <input type = "radio" name = "gender" id = "Prefer_not_to_say" value = "Prefer_not_to_say">
-                        <label for = "Prefer_not_to_say">Prefer not to say</label>
-                    </span>
-                </p>
+                        <span class = "radio">
+                            <input type = "radio" name = "gender" id = "Prefer_not_to_say" value = "Prefer_not_to_say">
+                            <label for = "Prefer_not_to_say">Prefer not to say</label>
+                        </span>
+                    </p>
                 </fieldset>
 
             </fieldset>
 
             <br>
 
+            <!-- fieldset for address -->
             <fieldset>
+                <!-- fieldset title -->
                 <legend>Address</legend>
                 <p class = "form_p_element">
                     <label class = "input_title" for = "street_address">Street address: *</label>
@@ -121,9 +133,11 @@
                     <input class = "input_field" type = "text" name = "suburb" id = "suburb" maxlength = "40" required = "required">
                 </p>
 
+                <!-- p element containing all elements for state input field  -->
                 <p class = "form_p_element">
                     <label class = "input_title" for = "state">State: *</label>
                     <br>
+                    <!-- dropdown menu selection for state -->
                     <select class = "input_field" name = "state" id = "state" required  = "required">
                         <option value = "">Please select</option>	
                         <option value = "vic">VIC</option>			
@@ -147,6 +161,7 @@
             <br>
 
             <fieldset>
+                <!-- fieldset title -->
                 <legend>Email and phone number</legend>
                 <p class = "form_p_element">
                     <label class = "input_title" for = "email">Email address: *</label>
@@ -165,9 +180,11 @@
             <br>
 
             <fieldset>
+                <!-- fieldset title -->
                 <legend>Job information</legend>
 
                 <fieldset id = "skill_list_sub_fieldset" style = "margin-top: 2.5em;">
+                    <!-- fieldset title -->
                     <legend>Skill list: *</legend>
                     <p>
                         <br>
@@ -212,12 +229,6 @@
             <input class = "input_field" type= "reset" value="Reset form">
 
         </form>
-
-
-
-
-
-
 
     </body>
 

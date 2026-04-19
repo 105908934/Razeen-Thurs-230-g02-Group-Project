@@ -6,7 +6,7 @@ author: [All members]
 
 created: [13/04/2026]
 
-last modified: [18/04/2026]
+last modified: [19/04/2026]
 
 description: [links to all html files in the project]
 
@@ -111,7 +111,7 @@ legend {
     font-weight: bold;
     font-size: 1.6em;
     border: 0.2em solid black;
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 0.1em;
     padding-left: 0.4em;
     padding-right: 0.4em;
@@ -143,6 +143,10 @@ fieldset, #reference_number_box {
 
 #gender_sub_fieldset {
     width: 0%;
+    padding-top: 0.25em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 input, textarea, select {
@@ -186,8 +190,6 @@ input:focus, textarea:focus, select:focus {
     padding-bottom: 0.625em;
     padding-top: 0.3125em;
     font-size: 1.1em;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .radio {width: 10em;}
