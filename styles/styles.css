@@ -245,6 +245,8 @@ input:focus, textarea:focus, select:focus {
     width: 70%;
     text-align: left;
     font-size: 1.25em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #jobAside {
@@ -290,6 +292,7 @@ input:focus, textarea:focus, select:focus {
     font-weight: bold;
     width: 10em;
     transition: 0.2s;
+    margin: auto;
 }
 
 #applylink a{
@@ -298,7 +301,8 @@ input:focus, textarea:focus, select:focus {
 }
 
 #interested {
-   font-size: 1.25em; 
+   font-size: 1.25em;
+   text-align: center;
 }
 
 /* end jobs page styling */
