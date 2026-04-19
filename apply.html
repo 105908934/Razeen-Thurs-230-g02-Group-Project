@@ -35,7 +35,8 @@
              <h1>Apply Page</h1>
 
             <br>
-        
+            
+            <!-- central navigation bar -->
             <nav>
                 <a id = "home" href="index.html">Home</a>
                 <a id = "about_us" href="about.html">About Us</a>
@@ -53,9 +54,12 @@
             <h2 id = "form_title">Apply form</h2>
 
             <div id = "reference_number_box">
+                <!-- p element containing all elements for the reference number input field -->
                 <p>
+                    <!-- label for the reference number input field -->
                     <label class = "input_title" for = reference_number>Job reference number: *</label>
                     <br>
+                    <!-- text input box for reference number -->
                     <input class = "input_field" type = "text" name = "reference_number" id = "reference_number" pattern = "^[A-Za-z0-9]*$" minlength="5" maxlength="5" required = "required">
                 </p>
             </div>
@@ -66,48 +70,66 @@
             <fieldset>
                 <!-- fieldset title -->
                 <legend>Personal information</legend>
+                <!-- p element containing all elements for the first name input field -->
                 <p class = "form_p_element">
+                    <!-- label for the first name input field -->
                     <label class = "input_title" for = "first_name">First name: *</label>
                     <br>
+                    <!-- text input box for first name -->
                     <input class = "input_field" type = "text" name = "first_name" id = "first_name" pattern = "^[a-zA-Z][\sa-zA-Z]*$" maxlength = "20" required = "required">
                 </p>
 
+                <!-- p element containing all elements for the last name input field -->
                 <p class = "form_p_element">
+                    <!-- label for the last name input field -->
                     <label class = "input_title" for = "last_name">Last name: *</label>
                     <br>
+                    <!-- text input box for last name -->
                     <input class = "input_field" type = "text" name = "last_name" id = "last_name" pattern = "^[a-zA-Z][\sa-zA-Z]*$" maxlength = "20" required = "required">
                 </p>
 
-            <p class = "form_p_element">
-                <label class = "input_title" for = "date_of_birth">Date of birth: *</label>
-                <br>
-                <input class = "input_field" type = "date" name = "date_of_birth" id = "date_of_birth" required = "required">
-            </p>
+                <!-- p element containing all elements for the date of birth input field -->
+                <p class = "form_p_element">
+                    <!-- label for the date of birth input field -->
+                    <label class = "input_title" for = "date_of_birth">Date of birth: *</label>
+                    <br>
+                    <!-- date input box for date of birth -->
+                    <input class = "input_field" type = "date" name = "date_of_birth" id = "date_of_birth" required = "required">
+                </p>
 
-            <br>
+                <br>
                 
                 <!-- sub-fieldset of personal information for gender -->
                 <fieldset id = "gender_sub_fieldset">
                     <!-- fieldset title -->
                     <legend>Gender *</legend>
+                    <!-- p element containing all elements for the gender input field -->
                     <p>
                         <span class = "radio">
+                            <!-- radio button for male gender -->
                             <input type = "radio" name = "gender" id = "male" value = "male" required = "required">           
+                            <!-- label for the male gender radio button -->
                             <label for = "male">Male</label>
                         </span>
                             
                         <span class = "radio">
+                            <!-- radio button for female gender -->
                             <input type = "radio" name = "gender" id = "female" value = "female">
+                            <!-- label for the female gender radio button -->
                             <label for = "female">Female</label>
                         </span>
                             
                         <span class = "radio">
+                            <!-- radio button for non-binary gender -->
                             <input type = "radio" name = "gender" id = "non_binary" value = "non_binary">
+                            <!-- label for the non-binary gender radio button -->
                             <label for = "non_binary">Non-binary</label>
                         </span>
 
                         <span class = "radio">
+                            <!-- radio button for prefer not to say gender -->
                             <input type = "radio" name = "gender" id = "Prefer_not_to_say" value = "Prefer_not_to_say">
+                            <!-- label for the prefer not to say gender radio button -->
                             <label for = "Prefer_not_to_say">Prefer not to say</label>
                         </span>
                     </p>
@@ -121,20 +143,27 @@
             <fieldset>
                 <!-- fieldset title -->
                 <legend>Address</legend>
+                <!-- p element containing all elements for the street address input field -->
                 <p class = "form_p_element">
+                    <!-- label for the street address input field -->
                     <label class = "input_title" for = "street_address">Street address: *</label>
                     <br>
+                    <!-- text input box for street address -->
                     <input class = "input_field" type = "text" name = "street_address" id = "street_address" maxlength = "40" required = "required">
                 </p>
                 
+                <!-- p element containing all elements for the suburb/town input field -->
                 <p class = "form_p_element">
+                    <!-- label for the suburb/town input field -->
                     <label class = "input_title" for = "suburb">Suburb/town: *</label>
                     <br>
+                    <!-- text input box for suburb/town -->
                     <input class = "input_field" type = "text" name = "suburb" id = "suburb" maxlength = "40" required = "required">
                 </p>
 
-                <!-- p element containing all elements for state input field  -->
+                <!-- p element containing all elements for the state input field -->
                 <p class = "form_p_element">
+                    <!-- label for the state input field -->
                     <label class = "input_title" for = "state">State: *</label>
                     <br>
                     <!-- dropdown menu selection for state -->
@@ -151,27 +180,37 @@
                     </select>
                 </p>
 
+                <!-- p element containing all elements for the postcode input field -->
                 <p class = "form_p_element">
+                    <!-- label for the postcode input field -->
                     <label class = "input_title" for = "postcode">Postcode: *</label>
                     <br>
+                    <!-- text input box for postcode -->
                     <input class = "input_field" type = "text" name = "postcode" id = "postcode" pattern = "^[0-9]*$" minlength="4" maxlength = "4" required = "required">
                 </p>
             </fieldset>
 
             <br>
 
+            <!-- fieldset for email and phone number -->
             <fieldset>
                 <!-- fieldset title -->
                 <legend>Email and phone number</legend>
+                <!-- p element containing all elements for the email address input field -->
                 <p class = "form_p_element">
+                    <!-- label for the email address input field -->
                     <label class = "input_title" for = "email">Email address: *</label>
                     <br>
+                    <!-- text input box for email address -->
                     <input class = "input_field" type = "email" name = "email" id = "email" required = "required">
                 </p>
 
+                <!-- p element containing all elements for the phone number input field -->
                 <p class = "form_p_element">
+                    <!-- label for the phone number input field -->
                     <label class = "input_title" for = "phone_number">Phone number: *</label>
                     <br>
+                    <!-- text input box for phone_number -->
                     <input class = "input_field" type = "text" name = "phone_number" id = "phone_number" pattern = "^[0-9]*$" minlength="8" maxlength = "12" required = "required">
                 </p>
 
@@ -179,59 +218,75 @@
 
             <br>
 
+            <!-- fieldset for job information -->
             <fieldset>
                 <!-- fieldset title -->
                 <legend>Job information</legend>
 
+                <!-- sub-fieldset of job information for skill list -->
                 <fieldset id = "skill_list_sub_fieldset" style = "margin-top: 2.5em;">
                     <!-- fieldset title -->
                     <legend>Skill list: *</legend>
+
+                    <!-- p element containing all elements for the skill list input field -->
                     <p>
                         <br>
                         <span class = "checkbox">
+                            <!-- checkbox for skill -->
                             <input class = "input_element" type = "checkbox" name = "skill" id = "skill1" value = "skill1" checked = "checked">
+                            <!-- label for the skill 1 skill checkbox -->
                             <label for = "skill1">Skill 1</label>
                         </span>
 
                         <span class = "checkbox">
+                            <!-- checkbox for skill -->
                             <input class = "input_element" type = "checkbox" name = "skill" id = "skill2" value = "skill2">
+                            <!-- label for the skill 2 skill checkbox -->
                             <label for = "skill2">Skill 2</label>
                         </span>
 
                         <span class = "checkbox">
+                            <!-- checkbox for skill -->
                             <input class = "input_element" type = "checkbox" name = "skill" id = "skill3" value = "skill3">
+                            <!-- label for the skill 3 skill checkbox -->
                             <label for = "skill3">Skill 3</label>
                         </span>
                             
                         <span class = "checkbox">
+                            <!-- checkbox for skill -->
                             <input type = "checkbox" name = "skill" id = "skill4" value = "skill4">
+                            <!-- label for the skill 3 skill checkbox -->
                             <label for = "skill4">Skill 4</label>
                         </span>
                             
                         <span class = "checkbox">
+                            <!-- checkbox for skill -->
                             <input type = "checkbox" name = "skill" id = "skill5" value = "skill5">
+                            <!-- label for the skill 4 skill checkbox -->
                             <label for = "skill5">Skill 5</label>
                         </span>
                     </p>
 
                 </fieldset>
                 
-                
+                <!-- p element containing all elements for the other skills input field -->
                 <p class = "form_p_element">
+                    <!-- label for the other skills textarea field -->
                     <label class = "input_title" for = "other_skills">Other skills:</label>
                     <br>
+                    <!-- textarea input box for other skills -->
                     <textarea id="other_skills" name="other_skills" rows="6" cols="30" placeholder="Write other skills here..."></textarea>
                 </p>
             </fieldset>
 
+            <!-- form submit button -->
             <input class = "input_field" type= "submit" value="Submit">
-            <br>
+
+            <!-- form reset button to reset all form inputs -->
             <input class = "input_field" type= "reset" value="Reset form">
 
         </form>
 
     </body>
-
-
 
 </html>

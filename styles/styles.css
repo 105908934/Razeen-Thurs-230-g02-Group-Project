@@ -65,8 +65,8 @@ nav a#about_us {
 }
 
 nav a#jobs {
-    border-top-right-radius: 0.25em;
-    border-bottom-right-radius: 0.25em;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 nav {
@@ -244,6 +244,23 @@ input:focus, textarea:focus, select:focus {
 }
 /* end apply page specific styling */
 
+/* index page specific syling */
+.table {
+    border: 0.0625em solid;
+    border-collapse: collapse;
+    padding: 0.625em;
+}
+
+.MainText{
+    float:right;
+    width: 57%;
+}
+
+.table, aside{
+    margin-left: auto;
+    margin-right: auto;    
+}
+/* end index page specific syling */
 }
 
 
@@ -296,6 +313,23 @@ textarea {
 
 /* end apply page specific styling */
 
+/* index page specific syling */
+.table {
+    border: 0.0625em solid;
+    border-collapse: collapse;
+    padding: 0.625em;
+}
+
+.MainText{
+    float:right;
+    width: 57%;
+}
+
+.table, aside{
+    margin-left: auto;
+    margin-right: auto;    
+}
+/* end index page specific syling */
 }
 
 @media screen and (max-width: 50em) {
@@ -352,10 +386,7 @@ textarea {
 
 /* end apply page specific styling */
 
-}
-
 /* index page specific syling */
-
 .table {
     border: 0.0625em solid;
     border-collapse: collapse;
@@ -372,3 +403,5 @@ textarea {
     margin-right: auto;    
 }
 /* end index page specific syling */
+}
+
