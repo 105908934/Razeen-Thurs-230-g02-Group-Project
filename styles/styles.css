@@ -65,8 +65,8 @@ nav a#about_us {
 }
 
 nav a#jobs {
-    border-top-right-radius: 0.25em;
-    border-bottom-right-radius: 0.25em;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 nav {
