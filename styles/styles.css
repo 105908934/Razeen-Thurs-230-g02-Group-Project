@@ -242,6 +242,14 @@ input:focus, textarea:focus, select:focus {
 #joblistings th {
     padding: 1em;
 }
+
+#applylink a {
+    text-align: center;
+    border: 0.2em solid;
+    border-radius: 2em;
+    padding: 1em;
+    text-decoration: none;
+}
 /* end apply page specific styling */
 
 /* index page specific syling */
