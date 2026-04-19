@@ -6,18 +6,21 @@ author: [All members]
 
 created: [13/04/2026]
 
-last modified: [19/04/2026]
+last modified: [20/04/2026]
 
 description: [links to all html files in the project]
 
 */
 
-@media screen and (max-width: 500em) {
+/* styling for screen widths of a max of 4800px */
+@media screen and (max-width: 300em) {
 
 /* central styling */
 
+/* styling for all content, specifies font family */
 html {font-family: Arial, Helvetica, sans-serif;}
 
+/* styling for the central header */
 header {
     border: 5px solid black;
     border-radius: 40px;
@@ -30,17 +33,21 @@ header {
     padding-bottom: 2.5em;
 }
 
+/* styling for all h1 tags */
 h1 {
     font-size: 3em;
 }
 
+/* styling for all body tags, sets background colour */
 body {background-color: lightblue;}
 
+/* styling for the logo */
 .logo {
     width: 10%;
     height: 10%;
 }
 
+/* styling for the buttons in the navigation bar */
 nav a {
     border: 4px transparent;
     padding: 0.6em;
@@ -54,21 +61,23 @@ nav a {
     transition: 0.2s;
 }
 
+/* styling for the home button in the navigation bar */
 nav a#home {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-
+/* styling for the about us button in the navigation bar */
 nav a#about_us {
     border-right: 0.25em solid black;
     border-left: 0.25em solid black;
 }
-
+/* styling for the jobs button in the navigation bar */
 nav a#jobs {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
+/* styling for the central navigation bar */
 nav {
     display: flex;
     justify-content: center;
@@ -78,6 +87,7 @@ nav {
     margin: auto;
 }
 
+/* styling for when hovering over the buttons in the navigation bar */
 nav a:hover {
     background-color: #8ac5d8;
     transition: 0.2s;
@@ -89,6 +99,7 @@ nav a:hover {
 
 /* apply page specific styling */
 
+/* styling for the whole form element in apply.html */
 form {
     display: flex;
     align-items: center;
@@ -101,12 +112,14 @@ form {
     padding-bottom: 1.25em;
 }
 
+/* styling for the form title */
 #form_title {
     padding: 0.2em;
     font-size: 2.75em;
     font-weight: bold;
 }
 
+/* styling for the legend elements */
 legend {
     font-weight: bold;
     font-size: 1.6em;
@@ -118,6 +131,7 @@ legend {
 
 }
 
+/* styling for the fieldset elements and reference number box */
 fieldset, #reference_number_box {
     border: 5px solid black;
     border-radius: 25px;
@@ -128,11 +142,13 @@ fieldset, #reference_number_box {
     padding: 0em;
 }
 
+/* more styling for the reference number box */
 #reference_number_box {
     padding-top: 1.25em;
     padding-bottom: 1.5em;
 }
 
+/* styling for gender sub fieldset and skill list sub fieldset */
 #gender_sub_fieldset, #skill_list_sub_fieldset {
     margin: auto;
     padding: 0.9375em;
@@ -141,6 +157,7 @@ fieldset, #reference_number_box {
     padding-bottom: 2.4em;
 }
 
+/* more styling for gender sub fieldset */
 #gender_sub_fieldset {
     width: 0%;
     padding-top: 0.25em;
@@ -149,6 +166,7 @@ fieldset, #reference_number_box {
     padding-right: 2em;
 }
 
+/* styling for the input, textarea, and select elements */
 input, textarea, select {
     background-color: lightblue;
     border: 4px solid black;
@@ -161,21 +179,25 @@ input, textarea, select {
     transition: 0.2s;
 }
 
+/* more styling for the textarea element */
 textarea {
     width: 25em;
     height: 10em;
 }
 
+/* styling for input, textarea, and select when they are selected (focused on) */
 input:focus, textarea:focus, select:focus {
     background-color: #8ac5d8;
     transition: 0.2s;
 }
 
-.input_title {
+/* styling for the input label class */
+.input_label {
     font-size: 1.3em;
     font-weight: bold;
 }
 
+/* styling for the radio (gender) and checkbox (skill list) classes (their individual input buttons) */
 .radio, .checkbox {
     background-color: lightblue;
     border: 4px solid black;
@@ -192,23 +214,29 @@ input:focus, textarea:focus, select:focus {
     font-size: 1.1em;
 }
 
+/* more styling for the radio class */
 .radio {width: 10em;}
 
+/* styling for the radio and checkbox type */
 [type = "radio"], [type = "checkbox"] {
     width: 0.9em;
     height: 0.9em;
 }
 
+/* styling for the submit button and the reset button when they are hovered over */
 [type = "submit"]:hover, [type = "reset"]:hover {
     background-color: #8ac5d8;
     transition: 0.2s;
 }
 
+/* styling for the input field class and the textarea element */
 .input_field, textarea {margin-top: 0.625em;}
 
 /* end apply page specific styling */
 
-/* Style for jobs.html*/
+
+
+/* job page specific styling */
 
 #listing {
     border: 0.3em solid darkslategray;
@@ -275,7 +303,12 @@ input:focus, textarea:focus, select:focus {
 
 /* end jobs page styling */
 
-/* index page specific syling */
+/* end job page specific styling */
+
+
+
+/* index page specific styling */
+
 .table {
     border: 0.0625em solid;
     border-collapse: collapse;
@@ -291,12 +324,13 @@ input:focus, textarea:focus, select:focus {
     margin-left: auto;
     margin-right: auto;    
 }
-/* end index page specific syling */
+/* end index page specific styling */
 }
 
 
 
-@media screen and (max-width: 100em) {
+/* styling for screen widths of a max of 2000px */
+@media screen and (max-width: 125em) {
 
 /* central styling */
 
@@ -307,6 +341,10 @@ nav a {font-size: 1.2em;}
 nav {width: 23em;}
 
 /* end central styling */
+
+
+
+/* apply page specific styling */
 
 #form_title {
     font-size: 2.55em;
@@ -325,7 +363,7 @@ input, textarea, select {
     font-size: 1.1em;
 }
 
-.input_title {
+.input_label {
     font-size: 1.2em;
 }
 
@@ -338,13 +376,10 @@ textarea {
     height: 8em;
 }
 
-/* apply page specific styling */
-
-
-
 /* end apply page specific styling */
 
-/* index page specific syling */
+/* index page specific styling */
+
 .table {
     border: 0.0625em solid;
     border-collapse: collapse;
@@ -388,6 +423,7 @@ textarea {
 /* end jobs page styling */
 }
 
+/* styling for screen widths of a max of 800px */
 @media screen and (max-width: 50em) {
 
 /* central styling */
@@ -427,7 +463,7 @@ input, textarea, select {
     font-size: 0.9em;
 }
 
-.input_title {
+.input_label {
     font-size: 1em;
 }
 
