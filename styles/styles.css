@@ -65,8 +65,8 @@ nav a#about_us {
 }
 
 nav a#jobs {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
 }
 
 nav {
@@ -206,8 +206,61 @@ input:focus, textarea:focus, select:focus {
 
 .input_field, textarea {margin-top: 0.625em;}
 
+/* Style for jobs.html*/
+
+#listing {
+    border: 2px solid darkslategray;
+    background-color: #44c4ff;
+    border-radius: 10px;
+    width: 70%;
+    text-align: left;
+}
+
+#jobAside {
+    border: 0.2em solid;
+    border-radius: 2em;
+    width: 25%;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    float: right;
+}
+
+#information {
+    border: 0.2em solid;
+    border-radius: 2em;
+    width: 25%;
+    padding: 1em;
+    text-align: center;
+    margin-right: auto;
+}
+
+#jobsh2 {
+    text-align: center;
+}
+
+#joblistings th {
+    padding: 1em;
+}
 /* end apply page specific styling */
 
+/* index page specific syling */
+.table {
+    border: 0.0625em solid;
+    border-collapse: collapse;
+    padding: 0.625em;
+}
+
+.MainText{
+    float:right;
+    width: 57%;
+}
+
+.table, aside{
+    margin-left: auto;
+    margin-right: auto;    
+}
+/* end index page specific syling */
 }
 
 
@@ -260,6 +313,23 @@ textarea {
 
 /* end apply page specific styling */
 
+/* index page specific syling */
+.table {
+    border: 0.0625em solid;
+    border-collapse: collapse;
+    padding: 0.625em;
+}
+
+.MainText{
+    float:right;
+    width: 57%;
+}
+
+.table, aside{
+    margin-left: auto;
+    margin-right: auto;    
+}
+/* end index page specific syling */
 }
 
 @media screen and (max-width: 50em) {
@@ -316,10 +386,7 @@ textarea {
 
 /* end apply page specific styling */
 
-}
-
 /* index page specific syling */
-
 .table {
     border: 0.0625em solid;
     border-collapse: collapse;
@@ -336,3 +403,5 @@ textarea {
     margin-right: auto;    
 }
 /* end index page specific syling */
+}
+
