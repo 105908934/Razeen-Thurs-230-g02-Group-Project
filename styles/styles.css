@@ -361,17 +361,20 @@ input:focus, textarea:focus, select:focus {
 
 /* index page specific styling */
 
+/*boarder outline for table*/
 .table {
     border: 0.0625em solid;
     border-collapse: collapse;
     padding: 0.625em;
 }
 
+/*Positioning for main paragraph*/
 .MainText{
     float:right;
     width: 57%;
 }
 
+/*table positioning*/
 .table, aside{
     margin-left: auto;
     margin-right: auto;    
