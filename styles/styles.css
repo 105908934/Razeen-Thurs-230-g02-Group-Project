@@ -35,7 +35,7 @@ header {
 
 /* styling for all h1 tags */
 h1 {
-    font-size: 3em;
+    font-size: 2.6em;
 }
 
 /* styling for all body tags, sets background colour */
@@ -43,8 +43,8 @@ body {background-color: lightblue;}
 
 /* styling for the logo */
 .logo {
-    width: 10%;
-    height: 10%;
+    width: 15%;
+    height: 15%;
 }
 
 /* styling for the buttons in the navigation bar */
@@ -349,11 +349,17 @@ input:focus, textarea:focus, select:focus {
 
 /* central styling */
 
-h1 {font-size: 2.6em;}
+h1 {font-size: 2.2em;}
 
 nav a {font-size: 1.2em;}
 
 nav {width: 23em;}
+
+/* styling for the logo */
+.logo {
+    width: 20%;
+    height: 20%;
+}
 
 /* end central styling */
 
@@ -445,11 +451,17 @@ textarea {
 
 /* central styling */
 
-h1 {font-size: 2.1em;}
+h1 {font-size: 1.8em;}
 
 nav a {font-size: 1em;}
 
 nav {width: 19em;}
+
+/* styling for the logo */
+.logo {
+    width: 30%;
+    height: 30%;
+}
 
 /* end central styling */
 
