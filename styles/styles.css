@@ -212,6 +212,7 @@ input:focus, textarea:focus, select:focus {
     padding-bottom: 0.625em;
     padding-top: 0.3125em;
     font-size: 1.1em;
+    padding-left: 1em;
 }
 
 /* more styling for the radio class */
@@ -444,17 +445,11 @@ textarea {
 
 /* central styling */
 
-h1 {
-    font-size: 2.1em;
-}
+h1 {font-size: 2.1em;}
 
-nav a {
-    font-size: 1em;
-}
+nav a {font-size: 1em;}
 
-nav {
-    width: 19em;
-}
+nav {width: 19em;}
 
 /* end central styling */
 
@@ -462,30 +457,20 @@ nav {
 
 /* apply page specific styling */
 
-#form_title {
-    font-size: 2.35em;
-}
+#form_title {font-size: 2.35em;}
 
 legend {
     font-weight: bold;
     font-size: 1.2em;
 }
 
-#gender_sub_fieldset {
-    font-size: 0.9em;
-}
+#gender_sub_fieldset {font-size: 0.9em;}
 
-input, textarea, select {
-    font-size: 0.9em;
-}
+input, textarea, select {font-size: 0.9em;}
 
-.input_label {
-    font-size: 1em;
-}
+.input_label {font-size: 1em;}
 
-.radio, .checkbox {
-    font-size: 0.9em;
-}
+.radio, .checkbox {font-size: 0.9em;}
 
 textarea {
     width: 15em;
