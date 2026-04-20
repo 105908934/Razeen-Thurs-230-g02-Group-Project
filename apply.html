@@ -63,8 +63,8 @@
                     <!-- label for the reference number input field -->
                     <label class = "input_label" for = reference_number>Job reference number: *</label>
                     <br>
-                    <!-- text input box for reference number -->
-                    <input class = "input_field" type = "text" name = "reference_number" id = "reference_number" pattern = "^[A-Za-z0-9]*$" minlength="5" maxlength="5" required = "required">
+                    <!-- text input box for reference number, regex pattern sourced from copilot chatbot -->
+                    <input class = "input_field" type = "text" name = "reference_number" id = "reference_number" pattern = "^(?=.*[A-Za-z])(?=.*\d).+$" minlength="5" maxlength="5" required = "required">
                 </p>
             </div>
 
