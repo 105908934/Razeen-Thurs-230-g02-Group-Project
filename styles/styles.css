@@ -12,8 +12,8 @@ description: [links to all html files in the project]
 
 */
 
-/* styling for screen widths of a max of 4800px */
-@media screen and (max-width: 300em) {
+/* styling for screen widths of a max of 4000px - large screen */
+@media screen and (max-width: 250em) {
 
 /* central styling */
 
@@ -97,7 +97,7 @@ nav a:hover {
 
 
 
-/* apply page specific styling */
+/* apply page specific styling for  */
 
 /* styling for the whole form element in apply.html */
 form {
@@ -292,7 +292,6 @@ input:focus, textarea:focus, select:focus {
     text-align: center;
 }
 
-
 #h2Job3 {
     text-align: center;
 }
@@ -378,14 +377,79 @@ input:focus, textarea:focus, select:focus {
     margin-right: auto;    
 }
 /* end index page specific styling */
+
+
+
+
+/* about page specific styling */
+
+.student_id {
+    color: darkblue;
+    text-shadow: 1px 1px 10px darkblue;
+}
+
+figure {
+    border: 5px solid black;
+    width: 30%;
+    float: right;
+}
+
+tr.fun_facts_table_toprow {
+    color: darkblue;
+    text-shadow: 1px 1px 10px #00008b;
+}
+
+th.fun_facts_table_toprow {
+    padding: 0.5em;
+    background-color: lightblue;
+    transition: 0.2s;
+}
+
+th.fun_facts_table_names {
+    color: #0000ff;
+    text-shadow: 1px 1px 10px #0000ff;
+    padding: 0.5em;
+    background-color: lightblue;
+    transition: 0.2s;
+}
+
+td.fun_facts_table_names {
+    color: black;
+    text-shadow: 1px 1px 10px black;
+    padding: 0.5em;
+    background-color: lightblue;
+    transition: 0.2s
+}
+
+th.fun_facts_table_toprow:hover {
+    background-color: #8ac5d8;
+    transition: 0.2s;
+}
+
+td.fun_facts_table_names:hover {
+    background-color: #8ac5d8;
+    transition: 0.2s;
+}
+
+th.fun_facts_table_names:hover {
+    background-color: #8ac5d8;
+    transition: 0.2s;
+}
+
+table#fun_facts_table {
+    font-size:  1.25em;
+}
+
+/* end about page specific styling */
+
 }
 
 
 
-/* styling for screen widths of a max of 2000px */
+/* styling for screen widths of a max of 2000px - medium screen */
 @media screen and (max-width: 125em) {
 
-/* central styling */
+/* central styling for medium screen */
 
 h1 {font-size: 2.2em;}
 
@@ -399,11 +463,11 @@ nav {width: 23em;}
     height: 20%;
 }
 
-/* end central styling */
+/* end central styling for medium screen */
 
 
 
-/* apply page specific styling */
+/* apply page specific styling for medium screen */
 
 #form_title {
     font-size: 2.55em;
@@ -435,11 +499,11 @@ textarea {
     height: 8em;
 }
 
-/* end apply page specific styling */
+/* end apply page specific styling for medium screen */
 
 
 
-/* index page specific styling */
+/* index page specific styling for medium screen */
 
 .table {
     border: 0.0625em solid;
@@ -456,11 +520,12 @@ textarea {
     margin-left: auto;
     margin-right: auto;    
 }
-/* end index page specific syling */
+
+/* end index page specific styling for medium screen */
 
 
 
-/* jobs page specific styling */
+/* jobs page specific styling for medium screen */
 
 #applylink {
     font-size: 1.2em;
@@ -488,15 +553,24 @@ textarea {
    font-size: 1.2em; 
 }
 
-/* end jobs page specific styling */
+/* end jobs page specific styling for medium screen */
+
+
+
+/* about page specific styling for medium screen */
+
+table#fun_facts_table {
+    font-size:  1em;
 }
 
+/* end about page specific styling for medium screen */
 
+}
 
-/* styling for screen widths of a max of 800px */
+/* styling for screen widths of a max of 800px - small screen */
 @media screen and (max-width: 50em) {
 
-/* central styling */
+/* central styling for small screen */
 
 h1 {font-size: 1.8em;}
 
@@ -510,11 +584,11 @@ nav {width: 19em;}
     height: 30%;
 }
 
-/* end central styling */
+/* end central styling for small screen */
 
 
 
-/* apply page specific styling */
+/* apply page specific styling for small screen */
 
 #form_title {font-size: 2.35em;}
 
@@ -536,11 +610,11 @@ textarea {
     height: 6em;
 }
 
-/* end apply page specific styling */
+/* end apply page specific styling for small screen */
 
 
 
-/* index page specific syling */
+/* index page specific styling for small screen */
 .table {
     border: 0.0625em solid;
     border-collapse: collapse;
@@ -556,15 +630,14 @@ textarea {
     margin-left: auto;
     margin-right: auto;    
 }
-/* end index page specific syling */
+/* end index page specific styling for small screen */
 
 
 
-/* job page specific styling */
+/* job page specific styling for small screen */
 
 #applylink {
     font-size: 1em;
-
 }
 
 #listing1 {
@@ -610,6 +683,17 @@ textarea {
    font-size: 1em;
 }
 
-/* end jobs page specific styling */
+/* end jobs page specific styling for small screen */
+
+
+
+/* about page specific styling for small screen */
+
+table#fun_facts_table {
+    font-size:  0.75em;
+}
+
+/* end about page specific styling for small screen */
+
 }
 
