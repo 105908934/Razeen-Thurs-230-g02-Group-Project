@@ -2,7 +2,7 @@
 
 filename: [styles.css]
 
-author: [All members]
+author: [all members]
 
 created: [13/04/2026]
 
@@ -470,31 +470,38 @@ nav {width: 23em;}
 
 /* apply page specific styling for medium screen */
 
+/* styling for the form title for medium screen */
 #form_title {
     font-size: 2.55em;
 }
 
+/* styling for the legend elements for medium screen */
 legend {
     font-weight: bold;
     font-size: 1.4em;
 }
 
+/* more styling for gender sub fieldset for medium screen */
 #gender_sub_fieldset {
     font-size: 0.9em;
 }
 
+/* styling for the input, textarea, and select elements for medium screen */
 input, textarea, select {
     font-size: 1.1em;
 }
 
+/* styling for the input label class for medium screen */
 .input_label {
     font-size: 1.2em;
 }
 
+/* styling for the radio (gender) and checkbox (skill list) classes (their individual input buttons) for medium screen */
 .radio, .checkbox {
     font-size: 1.05em;
 }
 
+/* more styling for the textarea element for medium screen */
 textarea {
     width: 23em;
     height: 8em;
@@ -568,6 +575,8 @@ table#fun_facts_table {
 
 }
 
+
+
 /* styling for screen widths of a max of 800px - small screen */
 @media screen and (max-width: 50em) {
 
@@ -591,21 +600,28 @@ nav {width: 19em;}
 
 /* apply page specific styling for small screen */
 
+/* styling for the form title for small screen */
 #form_title {font-size: 2.35em;}
 
+/* styling for the legend elements for small screen */
 legend {
     font-weight: bold;
     font-size: 1.2em;
 }
 
+/* more styling for gender sub fieldset for small screen */
 #gender_sub_fieldset {font-size: 0.9em;}
 
+/* styling for the input, textarea, and select elements for small screen */
 input, textarea, select {font-size: 0.9em;}
 
+/* styling for the input label class for small screen */
 .input_label {font-size: 1em;}
 
+/* styling for the radio (gender) and checkbox (skill list) classes (their individual input buttons) for small screen */
 .radio, .checkbox {font-size: 0.9em;}
 
+/* more styling for the textarea element for small screen */
 textarea {
     width: 15em;
     height: 6em;
@@ -697,4 +713,3 @@ table#fun_facts_table {
 /* end about page specific styling for small screen */
 
 }
-
