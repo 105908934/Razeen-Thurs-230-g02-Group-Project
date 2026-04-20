@@ -381,7 +381,6 @@ input:focus, textarea:focus, select:focus {
 
 
 
-
 /* about page specific styling */
 
 .student_id {
@@ -469,6 +468,8 @@ nav {width: 23em;}
 
 
 /* apply page specific styling for medium screen */
+
+
 
 /* styling for the form title for medium screen */
 #form_title {
@@ -647,6 +648,7 @@ textarea {
     margin-left: auto;
     margin-right: auto;    
 }
+
 /* end index page specific styling for small screen */
 
 
