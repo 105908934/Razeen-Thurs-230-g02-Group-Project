@@ -241,7 +241,6 @@ input:focus, textarea:focus, select:focus {
 
 #listing1 {
     border: 0.3em solid black;
-    background-color: #44c4ff;
     border-radius: 2em;
     width: 70%;
     text-align: left;
@@ -279,7 +278,6 @@ input:focus, textarea:focus, select:focus {
     padding: 1em;
     margin: 1em;
     text-align: center;
-    float: right;
 }
 
 #information {
