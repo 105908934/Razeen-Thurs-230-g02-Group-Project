@@ -238,7 +238,29 @@ input:focus, textarea:focus, select:focus {
 
 /* jobs page specific styling */
 
-#listing {
+#listing1 {
+    border: 0.3em solid black;
+    background-color: #44c4ff;
+    border-radius: 2em;
+    width: 70%;
+    text-align: left;
+    font-size: 1.25em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#listing2 {
+    border: 0.3em solid black;
+    background-color: #44c4ff;
+    border-radius: 2em;
+    width: 70%;
+    text-align: left;
+    font-size: 1.25em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#listing3 {
     border: 0.3em solid black;
     background-color: #44c4ff;
     border-radius: 2em;
@@ -270,11 +292,27 @@ input:focus, textarea:focus, select:focus {
 }
 
 
-#jobsh2 {
+#h2Job3 {
     text-align: center;
 }
 
-#joblistings th {
+#h2Job2 {
+    text-align: center;
+}
+
+#h2Job1 {
+    text-align: center;
+}
+
+#joblistings1 th {
+    padding: 1em;
+}
+
+#joblistings2 th {
+    padding: 1em;
+}
+
+#joblistings3 th {
     padding: 1em;
 }
 
@@ -421,17 +459,26 @@ textarea {
     font-size: 1.2em;
 }
 
-#listing {
+#listing1 {
     border-radius: 1.8em;
     font-size: 1em;
+    width: 80%;
+}
+
+#listing2 {
+    border-radius: 1.8em;
+    font-size: 1em;
+    width: 80%;
+}
+
+#listing3 {
+    border-radius: 1.8em;
+    font-size: 1em;
+    width: 80%;
 }
 
 #interested {
    font-size: 1.2em; 
-}
-
-#listing {
-    width: 80%;
 }
 
 /* end jobs page specific styling */
@@ -523,7 +570,23 @@ textarea {
 
 }
 
-#listing {
+#listing1 {
+    border-radius: 1.6em;
+    font-size: 0.8em;
+    margin-left: 0.6em;
+    margin-right: 0.5em;
+    width: 95%;
+}
+
+#listing2 {
+    border-radius: 1.6em;
+    font-size: 0.8em;
+    margin-left: 0.6em;
+    margin-right: 0.5em;
+    width: 95%;
+}
+
+#listing3 {
     border-radius: 1.6em;
     font-size: 0.8em;
     margin-left: 0.6em;
